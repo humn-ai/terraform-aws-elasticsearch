@@ -99,7 +99,7 @@ data "aws_iam_policy_document" "assume_role" {
 
 resource "aws_elasticsearch_domain" "default" {
   count                 = module.this.enabled ? 1 : 0
-  domain_name           = module.this.id
+  domain_name           = var.elasticsearch_domain_name != "" ? var.elasticsearch_domain_name : module.this.id
   elasticsearch_version = var.elasticsearch_version
 
   advanced_options = var.advanced_options

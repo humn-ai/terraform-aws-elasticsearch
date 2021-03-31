@@ -61,6 +61,12 @@ variable "vpc_id" {
   default     = null
 }
 
+variable "elasticsearch_domain_name" {
+  type        = string
+  description = "Name of the domain"
+  default     = ""
+}
+
 variable "subnet_ids" {
   type        = list(string)
   description = "VPC Subnet IDs"
