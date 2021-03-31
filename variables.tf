@@ -115,10 +115,16 @@ variable "warm_type" {
   description = "Type of UltraWarm nodes"
 }
 
-variable "iam_role_arns" {
+variable "allowed_iam_role_arns" {
   type        = list(string)
   default     = []
   description = "List of IAM role ARNs to permit access to the Elasticsearch domain"
+}
+
+variable "allowed_aws_services" {
+  type        = list(string)
+  default     = []
+  description = "List of AWS services to grant access to the Elasticsearch domain"
 }
 
 variable "iam_authorizing_role_arns" {
