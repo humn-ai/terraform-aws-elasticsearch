@@ -263,7 +263,7 @@ data "aws_iam_policy_document" "default" {
 
 resource "aws_elasticsearch_domain_policy" "default" {
   count           = module.this.enabled && (length(var.iam_authorizing_role_arns) > 0 || length(var.allowed_iam_role_arns) > 0) ? 1 : 0
-  domain_name     = module.this.id
+  domain_name     = var.elasticsearch_domain_name != "" ? var.elasticsearch_domain_name : module.this.id
   access_policies = join("", data.aws_iam_policy_document.default.*.json)
 }
 
