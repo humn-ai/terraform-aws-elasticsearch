@@ -210,7 +210,7 @@ resource "aws_elasticsearch_domain" "default" {
 }
 
 data "aws_iam_policy_document" "default" {
-  count = module.this.enabled && (length(var.iam_authorizing_role_arns) > 0 || length(var.iam_role_arns) > 0) ? 1 : 0
+  count = module.this.enabled && (length(var.iam_authorizing_role_arns) > 0 || length(var.allowed_iam_role_arns) > 0) ? 1 : 0
 
   statement {
     effect = "Allow"
