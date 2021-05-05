@@ -1,0 +1,41 @@
+{
+  "fatigue": {
+    "mappings": {
+      "properties": {
+        "drivingTime": {
+          "type": "long"
+        },
+        "fatigueLevel": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "timestamp": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}

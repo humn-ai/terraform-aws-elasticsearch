@@ -1,0 +1,35 @@
+{
+  "fleetpremium": {
+    "mappings": {
+      "properties": {
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "period": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "periodAvgRiskScore": {
+          "type": "float"
+        },
+        "periodEndTimestamp": {
+          "type": "long"
+        },
+        "periodPremium": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}

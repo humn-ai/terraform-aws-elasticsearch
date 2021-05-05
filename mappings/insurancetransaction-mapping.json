@@ -1,0 +1,198 @@
+{
+  "insurancetransaction": {
+    "mappings": {
+      "properties": {
+        "cityPulseRelativeRisks": {
+          "properties": {
+            "error": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rateRelativeRisk": {
+              "type": "float"
+            },
+            "riskType": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "severityRelativeRisk": {
+              "type": "float"
+            }
+          }
+        },
+        "creationTime": {
+          "type": "long"
+        },
+        "drivingRelativeRisks": {
+          "properties": {
+            "error": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "relativeRisk": {
+              "type": "float"
+            },
+            "riskType": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "endTimestamp": {
+          "type": "long"
+        },
+        "eventType": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "fromAddress": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "historicalRisks": {
+          "properties": {
+            "error": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "relativeRisk": {
+              "type": "float"
+            },
+            "riskType": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pricingPipelineRisks": {
+          "properties": {
+            "error": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "relativeRisk": {
+              "type": "float"
+            },
+            "riskType": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "registrationNumber": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "startTimestamp": {
+          "type": "long"
+        },
+        "toAddress": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "tripDistanceInMetres": {
+          "type": "long"
+        },
+        "tripDrivingEventsRelativeRisk": {
+          "type": "double"
+        },
+        "tripFatigueRelativeRisk": {
+          "type": "double"
+        },
+        "tripPremium": {
+          "type": "double"
+        },
+        "tripRelativeRisk": {
+          "type": "double"
+        },
+        "tripScore": {
+          "type": "long"
+        },
+        "tripSpeedingRelativeRisk": {
+          "type": "long"
+        },
+        "varianceFromBasePPM": {
+          "type": "double"
+        }
+      }
+    }
+  }
+}
