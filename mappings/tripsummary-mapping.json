@@ -1,0 +1,57 @@
+{
+  "tripsummary": {
+    "mappings": {
+      "properties": {
+        "processingTime": {
+          "type": "long"
+        },
+        "tripSummary": {
+          "properties": {
+            "fleetId": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "isIgnitionOn": {
+              "type": "boolean"
+            },
+            "lat": {
+              "type": "float"
+            },
+            "licence": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "lng": {
+              "type": "float"
+            },
+            "odometer": {
+              "type": "long"
+            },
+            "timestamp": {
+              "type": "long"
+            },
+            "vin": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

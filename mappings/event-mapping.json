@@ -1,0 +1,59 @@
+{
+  "event": {
+    "mappings": {
+      "properties": {
+        "configTimestamp": {
+          "type": "long"
+        },
+        "eventEndTimestamp": {
+          "type": "long"
+        },
+        "eventStartTimestamp": {
+          "type": "long"
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "kind": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "severity": {
+          "type": "long"
+        },
+        "startTimestamp": {
+          "type": "long"
+        },
+        "vin": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
