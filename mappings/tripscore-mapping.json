@@ -1,0 +1,144 @@
+{
+  "tripscore": {
+    "mappings": {
+      "properties": {
+        "accelerationCountsPerSeverity": {
+          "properties": {
+            "count": {
+              "type": "float"
+            },
+            "severity": {
+              "type": "long"
+            }
+          }
+        },
+        "brakingCountsPerSeverity": {
+          "properties": {
+            "count": {
+              "type": "float"
+            },
+            "severity": {
+              "type": "long"
+            }
+          }
+        },
+        "corneringCountsPerSeverity": {
+          "properties": {
+            "count": {
+              "type": "float"
+            },
+            "severity": {
+              "type": "long"
+            }
+          }
+        },
+        "duration": {
+          "type": "long"
+        },
+        "fatigueDurationsPerSeverity": {
+          "properties": {
+            "duration": {
+              "type": "float"
+            },
+            "severity": {
+              "type": "long"
+            }
+          }
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "partialScores": {
+          "properties": {
+            "acceleration": {
+              "properties": {
+                "value": {
+                  "type": "float"
+                },
+                "weight": {
+                  "type": "long"
+                }
+              }
+            },
+            "braking": {
+              "properties": {
+                "value": {
+                  "type": "float"
+                },
+                "weight": {
+                  "type": "long"
+                }
+              }
+            },
+            "fatigue": {
+              "properties": {
+                "value": {
+                  "type": "float"
+                },
+                "weight": {
+                  "type": "long"
+                }
+              }
+            },
+            "speeding": {
+              "properties": {
+                "value": {
+                  "type": "float"
+                },
+                "weight": {
+                  "type": "long"
+                }
+              }
+            }
+          }
+        },
+        "score": {
+          "type": "float"
+        },
+        "scoreTimestamp": {
+          "type": "long"
+        },
+        "speedingDurationsPerSeverity": {
+          "properties": {
+            "duration": {
+              "type": "float"
+            },
+            "severity": {
+              "type": "long"
+            }
+          }
+        },
+        "startTimestamp": {
+          "type": "long"
+        },
+        "tripDistanceInMetres": {
+          "type": "long"
+        },
+        "vin": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "alertdispute": {
+    "mappings": {
+      "properties": {
+        "alertDate": {
+          "type": "long"
+        },
+        "alertType": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "disputeDate": {
+          "type": "long"
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "resolved": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "scorezone": {
+    "mappings": {
+      "properties": {
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "hoursInZone": {
+          "type": "long"
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "scoreZone": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "zoneStartTimestamp": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}

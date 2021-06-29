@@ -1,0 +1,101 @@
+{
+  "driveraction": {
+    "mappings": {
+      "properties": {
+        "activityLog": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "aggregatedRisk": {
+          "type": "float"
+        },
+        "archiveDate": {
+          "type": "long"
+        },
+        "closureDate": {
+          "type": "long"
+        },
+        "earliestTripStartTime": {
+          "type": "long"
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "isArchived": {
+          "type": "boolean"
+        },
+        "isUrgent": {
+          "type": "boolean"
+        },
+        "issueDate": {
+          "type": "long"
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "membersEmails": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "prioritisedRisk": {
+          "type": "float"
+        },
+        "riskPremiumIncrease": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "severity": {
+          "type": "long"
+        },
+        "status": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "totalTripDistanceInMeters": {
+          "type": "long"
+        },
+        "updatedBy": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
