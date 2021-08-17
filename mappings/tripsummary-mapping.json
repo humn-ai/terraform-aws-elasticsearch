@@ -2,52 +2,78 @@
   "tripsummary": {
     "mappings": {
       "properties": {
-        "processingTime": {
+        "endLocation": {
+          "type": "geo_point"
+        },
+        "endTimestamp": {
           "type": "long"
         },
-        "tripSummary": {
-          "properties": {
-            "fleetId": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "isIgnitionOn": {
-              "type": "boolean"
-            },
-            "lat": {
-              "type": "float"
-            },
-            "licence": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
-            },
-            "lng": {
-              "type": "float"
-            },
-            "odometer": {
-              "type": "long"
-            },
-            "timestamp": {
-              "type": "long"
-            },
-            "vin": {
-              "type": "text",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 256
-                }
-              }
+        "finished": {
+          "type": "boolean"
+        },
+        "fleetId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "fromAddress": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "licence": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "startLocation": {
+          "type": "geo_point"
+        },
+        "startTimestamp": {
+          "type": "long"
+        },
+        "toAddress": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "tripDetailsStatus": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "tripDistanceInMetres": {
+          "type": "long"
+        },
+        "validFrom": {
+          "type": "long"
+        },
+        "vin": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
             }
           }
         }
