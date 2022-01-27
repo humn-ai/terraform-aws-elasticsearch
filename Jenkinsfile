@@ -25,7 +25,7 @@ pipeline {
         stage('Tag & Push') {
             when {
                 allOf {
-                    branch 'master'
+                    branch 'main'
                 }
             }
 
